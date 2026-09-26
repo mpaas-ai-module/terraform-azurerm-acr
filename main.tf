@@ -13,8 +13,7 @@ resource "azurerm_container_registry" "acr_premium" {
   zone_redundancy_enabled       = var.zone_redundancy_enabled
   quarantine_policy_enabled     = var.quarantine_policy_enabled
   network_rule_bypass_option    = var.network_rule_bypass_option
-  retention_policy_in_days      = var.retention_policy_in_days # new version supported attr for retention policy
-  trust_policy_enabled          = var.trust_policy_enabled     # new version supported attr for trust policy
+
 
   network_rule_set {
     default_action = var.acr_default_action
